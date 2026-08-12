@@ -1,139 +1,748 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akanksha Gotarne | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfolio of Akanksha Mahendra Gotarne - Information Technology Engineering Student and Aspiring Software Developer">
+
+    <meta name="author" content="Akanksha Mahendra Gotarne">
+
+    <title>Akanksha Gotarne | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <h2>Akanksha Gotarne</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- ================= NAVBAR ================= -->
 
-<section class="hero">
-    <img src="profile.jpg" alt="Profile">
-    <h1>Akanksha Mahendra Gotarne</h1>
-    <h3>Aspiring Software Developer | Web Development Enthusiast</h3>
+    <header class="header">
 
-    <p>
-        Information Technology Engineering Student at
-        Sinhgad Institute of Technology, Lonavala.
-        CGPA: 9.38
-    </p>
+        <nav class="navbar">
 
-    <div class="buttons">
-        <a href="resume.pdf" download class="btn">Download Resume</a>
-        <a href="https://www.linkedin.com/in/akanksha-gotarne-b418262bb" target="_blank" class="btn">LinkedIn</a>
-        <a href="https://github.com/akankshagotarne" target="_blank" class="btn">GitHub</a>
-    </div>
-</section>
+            <a href="#home" class="logo">
+                Akanksha<span></span>
+            </a>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am an Information Technology Engineering student at
-        Sinhgad Institute of Technology, Lonavala.
-        I have maintained a CGPA of 9.38 across five semesters.
-        I am passionate about Web Development, DSA and Software Development.
-    </p>
-</section>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
 
-<section id="skills">
-    <h2>Skills</h2>
+            <ul class="nav-links" id="nav-links">
 
-    <div class="card">
-        <h3>Programming Languages</h3>
-        <p>Python, Java, JavaScript</p>
-    </div>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-    <div class="card">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript, React</p>
-    </div>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-    <div class="card">
-        <h3>Tools</h3>
-        <p>Git, GitHub, VS Code</p>
-    </div>
-</section>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
 
-<section id="projects">
-    <h2>Projects</h2>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
 
-    <div class="project">
-        <h3>E-Commerce Website</h3>
-        <p>
-            Responsive e-commerce platform with product listings,
-            authentication and shopping cart functionality.
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <p class="intro">
+                    Hello, I'm
+                </p>
+
+                <h1>
+                    Akanksha Mahendra Gotarne
+                </h1>
+
+                <h2>
+                    <span id="typing-text"></span>
+                </h2>
+
+                <p class="hero-description">
+
+                    Information Technology Engineering student passionate
+                    about building modern web applications, solving
+                    programming problems, and continuously learning
+                    new technologies.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="resume.pdf" download class="btn primary-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/akanksha-gotarne-b418262bb"
+                        target="_blank"
+                        class="btn secondary-btn">
+
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+
+                    </a>
+
+                    <a href="https://github.com/akankshagotarne"
+                        target="_blank"
+                        class="btn secondary-btn">
+
+                        <i class="fab fa-github"></i>
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="image-glow"></div>
+
+                <img src="profile.jpg"
+                    alt="Akanksha Mahendra Gotarne">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section" id="about">
+
+        <div class="section-title">
+
+            <p>Get To Know Me</p>
+
+            <h2>About <span>Me</span></h2>
+
+        </div>
+
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img src="profile.jpg"
+                    alt="Akanksha Gotarne">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h3>
+                    Information Technology Engineering Student
+                </h3>
+
+                <p>
+
+                    I am an Information Technology Engineering student
+                    at <strong>Sinhgad Institute of Technology, Lonavala</strong>,
+                    with a strong academic record and a genuine interest
+                    in software development and modern web technologies.
+
+                </p>
+
+                <p>
+
+                    I have maintained an aggregate
+                    <strong>CGPA of 9.38 across five semesters</strong>.
+                    My academic journey has helped me develop a strong
+                    foundation in programming, problem-solving,
+                    databases, web development, and software engineering.
+
+                </p>
+
+                <p>
+
+                    I enjoy transforming ideas into practical applications.
+                    I have worked on projects such as an
+                    <strong>E-Commerce Website</strong> and a
+                    <strong>Social Media Platform</strong>, which helped
+                    me gain practical experience in frontend development,
+                    backend technologies, databases, and Git/GitHub.
+
+                </p>
+
+                <p>
+
+                    Currently, I am focusing on improving my
+                    <strong>Data Structures and Algorithms</strong>,
+                    Java programming, Full Stack Web Development,
+                    and interview preparation to become placement-ready.
+
+                </p>
+
+                <p>
+
+                    I believe in continuous learning and improving
+                    through practical projects. My goal is to start
+                    my career as a software developer where I can
+                    contribute to real-world projects while continuously
+                    growing my technical skills.
+
+                </p>
+
+
+                <div class="about-info">
+
+                    <div>
+                        <span>Education</span>
+                        <strong>B.E. Information Technology</strong>
+                    </div>
+
+                    <div>
+                        <span>CGPA</span>
+                        <strong>9.38</strong>
+                    </div>
+
+                    <div>
+                        <span>Focus</span>
+                        <strong>Web Development & DSA</strong>
+                    </div>
+
+                    <div>
+                        <span>Goal</span>
+                        <strong>Software Developer</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="section skills-section" id="skills">
+
+        <div class="section-title">
+
+            <p>My Technical Skills</p>
+
+            <h2>What I <span>Know</span></h2>
+
+        </div>
+
+
+        <div class="skills-container">
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <h3>Programming Languages</h3>
+
+                <div class="skill-tags">
+
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <div class="skill-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+
+                <h3>Database</h3>
+
+                <div class="skill-tags">
+
+                    <span>MongoDB</span>
+                    <span>MySQL</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+
+                <h3>Tools</h3>
+
+                <div class="skill-tags">
+
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+
+                <h3>Currently Learning</h3>
+
+                <div class="skill-tags">
+
+                    <span>DSA</span>
+                    <span>Java</span>
+                    <span>Full Stack Development</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section" id="projects">
+
+        <div class="section-title">
+
+            <p>My Recent Work</p>
+
+            <h2>Featured <span>Projects</span></h2>
+
+        </div>
+
+
+        <div class="projects-container">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-header">
+
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/akankshagotarne"
+                            target="_blank">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    E-Commerce Website
+                </h3>
+
+                <p>
+
+                    A responsive e-commerce web application designed
+                    to provide users with a smooth online shopping
+                    experience.
+
+                </p>
+
+                <ul class="project-features">
+
+                    <li>Product browsing and listing</li>
+
+                    <li>User authentication</li>
+
+                    <li>Shopping cart functionality</li>
+
+                    <li>Responsive user interface</li>
+
+                </ul>
+
+
+                <div class="project-tech">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-header">
+
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/akankshagotarne"
+                            target="_blank">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    Social Media Platform
+                </h3>
+
+                <p>
+
+                    A social networking platform that allows users
+                    to create profiles, share posts, interact with
+                    content, and connect with other users.
+
+                </p>
+
+                <ul class="project-features">
+
+                    <li>User profile management</li>
+
+                    <li>Create and share posts</li>
+
+                    <li>Like and interact with content</li>
+
+                    <li>Database integration</li>
+
+                </ul>
+
+
+                <div class="project-tech">
+
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="section education-section" id="education">
+
+        <div class="section-title">
+
+            <p>My Academic Journey</p>
+
+            <h2>My <span>Education</span></h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Engineering
+                    </span>
+
+                    <h3>
+                        Bachelor of Engineering
+                    </h3>
+
+                    <h4>
+                        Information Technology
+                    </h4>
+
+                    <p>
+                        Sinhgad Institute of Technology, Lonavala
+                    </p>
+
+                    <strong>
+                        Aggregate CGPA: 9.38
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        12th Science
+                    </span>
+
+                    <h3>
+                        Higher Secondary Education
+                    </h3>
+
+                    <h4>
+                        Science
+                    </h4>
+
+                    <p>
+                        S.B. Patole Junior College, Chakan
+                    </p>
+
+                    <strong>
+                        Percentage: 68.83%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        10th
+                    </span>
+
+                    <h3>
+                        Secondary Education
+                    </h3>
+
+                    <p>
+                        Shri Shivaji Vidya Mandir, Chakan
+                    </p>
+
+                    <strong>
+                        Percentage: 92%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section contact-section" id="contact">
+
+        <div class="section-title">
+
+            <p>Let's Connect</p>
+
+            <h2>Get In <span>Touch</span></h2>
+
+        </div>
+
+
+        <p class="contact-description">
+
+            I'm currently preparing for internships and placement
+            opportunities. Feel free to connect with me for
+            professional opportunities, collaboration, or simply
+            to discuss technology and projects.
+
         </p>
-    </div>
 
-    <div class="project">
-        <h3>Social Media Platform</h3>
-        <p>
-            Social networking platform where users can create
-            profiles, share posts and interact with content.
-        </p>
-    </div>
-</section>
 
-<section id="education">
-    <h2>Education</h2>
+        <div class="contact-container">
 
-    <div class="card">
-        <h3>B.E Information Technology</h3>
-        <p>Sinhgad Institute of Technology, Lonavala</p>
-        <p>CGPA: 9.38</p>
-    </div>
 
-    <div class="card">
-        <h3>12th Science</h3>
-        <p>S.B. Patole Junior College, Chakan</p>
-        <p>68.83%</p>
-    </div>
+            <a href="https://www.linkedin.com/in/akanksha-gotarne-b418262bb"
+                target="_blank"
+                class="contact-card">
 
-    <div class="card">
-        <h3>10th</h3>
-        <p>Shri Shivaji Vidya Mandir, Chakan</p>
-        <p>92%</p>
-    </div>
-</section>
+                <i class="fab fa-linkedin"></i>
 
-<section id="contact">
-    <h2>Contact</h2>
+                <div>
 
-    <p>Email: your-email@example.com</p>
+                    <h3>LinkedIn</h3>
 
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/akanksha-gotarne-b418262bb">
-            View Profile on LinkedIn
-        </a>
-    </p>
+                    <p>Connect with me</p>
 
-    <p>
-        GitHub:
-        <a href="https://github.com/akankshagotarne">
-            View on GitHub
-        </a>
-    </p>
-</section>
+                </div>
 
-<footer>
-    <p>© 2026 Akanksha Mahendra Gotarne</p>
-</footer>
+            </a>
 
-<script src="script.js"></script>
+
+            <a href="https://github.com/akankshagotarne"
+                target="_blank"
+                class="contact-card">
+
+                <i class="fab fa-github"></i>
+
+                <div>
+
+                    <h3>GitHub</h3>
+
+                    <p>View my projects</p>
+
+                </div>
+
+            </a>
+
+
+            <div class="contact-card">
+
+                <i class="fas fa-graduation-cap"></i>
+
+                <div>
+
+                    <h3>Education</h3>
+
+                    <p>IT Engineering Student</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                Akanksha<span>.</span>
+            </h3>
+
+            <p>
+                Aspiring Software Developer
+            </p>
+
+            <div class="social-links">
+
+                <a href="https://github.com/akankshagotarne"
+                    target="_blank">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/akanksha-gotarne-b418262bb"
+                    target="_blank">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Akanksha Mahendra Gotarne. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
