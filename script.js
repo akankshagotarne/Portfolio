@@ -53,10 +53,11 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 const typingText = document.getElementById("typing-text");
 
 const roles = [
-    "Aspiring Software Developer",
-    "Web Development Enthusiast",
-    "DSA Learner",
-    "IT Engineering Student"
+    "CEO & Founder, LearnIQ",
+    "QA & Test Development Enthusiast",
+    "Full Stack Web Developer",
+    "Software Development & Testing",
+    "DSA Problem Solver"
 ];
 
 let roleIndex = 0;
@@ -120,7 +121,7 @@ typeEffect();
 /* ============================= */
 
 const revealElements = document.querySelectorAll(
-    ".skill-card, .project-card, .timeline-item, .contact-card, .about-content"
+    ".skill-card, .project-card, .timeline-item, .contact-card, .about-content, .learniq-hero-card, .learniq-feature-card, .learniq-tech-stack, .experience-card"
 );
 
 const observer = new IntersectionObserver(

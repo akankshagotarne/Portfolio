@@ -315,6 +315,38 @@ span {
     border-color: rgba(139, 92, 246, 0.5);
 }
 
+/* Highlighted QA card — NVIDIA focus */
+.skill-card--highlight {
+    border: 2px solid rgba(16, 185, 129, 0.5);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(139, 92, 246, 0.06));
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card--highlight::before {
+    content: "★ NVIDIA-Ready";
+    position: absolute;
+    top: 12px;
+    right: -30px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 40px;
+    transform: rotate(35deg);
+}
+
+.skill-card--highlight:hover {
+    border-color: #10b981;
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+}
+
+.skill-card--highlight .skill-icon {
+    color: #10b981;
+}
+
 .skill-icon {
     font-size: 30px;
     color: #8b5cf6;
@@ -336,6 +368,245 @@ span {
     border-radius: 7px;
     background: rgba(139, 92, 246, 0.1);
     font-size: 13px;
+}
+
+.skill-card--highlight .skill-tags span {
+    background: rgba(16, 185, 129, 0.12);
+    color: #6ee7b7;
+}
+
+
+/* ============================= */
+/* LEARNIQ */
+/* ============================= */
+
+.learniq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.learniq-hero-card {
+    padding: 45px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgba(108, 99, 242, 0.12), rgba(139, 92, 246, 0.06));
+    border: 1px solid rgba(108, 99, 242, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.learniq-hero-card::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(108, 99, 242, 0.2), transparent 70%);
+    border-radius: 50%;
+}
+
+.learniq-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.learniq-hero-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.learniq-tagline {
+    color: #a78bfa;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.learniq-description {
+    color: #94a3b8;
+    max-width: 800px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.learniq-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.learniq-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learniq-feature-card {
+    padding: 25px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(139, 92, 246, 0.12);
+    transition: 0.3s;
+}
+
+.learniq-feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(108, 99, 242, 0.4);
+    box-shadow: 0 10px 30px rgba(108, 99, 242, 0.1);
+}
+
+.feature-icon {
+    font-size: 26px;
+    color: #a78bfa;
+    margin-bottom: 12px;
+}
+
+.learniq-feature-card h4 {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.learniq-feature-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.learniq-tech-stack {
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    text-align: center;
+}
+
+.learniq-tech-stack h4 {
+    color: #a78bfa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.learniq-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.learniq-tech-tags span {
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: rgba(108, 99, 242, 0.12);
+    color: #c4b5fd;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.learniq-tech-tags span:hover {
+    background: rgba(108, 99, 242, 0.25);
+    transform: translateY(-2px);
+}
+
+
+/* ============================= */
+/* EXPERIENCE */
+/* ============================= */
+
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.experience-card {
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(139, 92, 246, 0.12);
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.08);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.exp-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(139, 92, 246, 0.1);
+    color: #a78bfa;
+    font-size: 20px;
+}
+
+.exp-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.exp-date {
+    color: #a78bfa !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.exp-type {
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: rgba(139, 92, 246, 0.1);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.experience-card h4 {
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.exp-details {
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+.exp-details li {
+    margin: 6px 0;
+    line-height: 1.6;
 }
 
 
@@ -362,6 +633,18 @@ span {
     border-color: rgba(139, 92, 246, 0.5);
 }
 
+/* Featured project (LearnIQ) spans full width */
+.project-card--featured {
+    grid-column: 1 / -1;
+    border: 1px solid rgba(108, 99, 242, 0.3);
+    background: linear-gradient(135deg, rgba(108, 99, 242, 0.08), rgba(139, 92, 246, 0.04));
+}
+
+.project-card--featured:hover {
+    border-color: rgba(108, 99, 242, 0.6);
+    box-shadow: 0 12px 40px rgba(108, 99, 242, 0.12);
+}
+
 .project-header {
     display: flex;
     justify-content: space-between;
@@ -381,6 +664,11 @@ span {
 
     color: #a78bfa;
     font-size: 22px;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
 }
 
 .project-links a {
@@ -690,6 +978,18 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
+    .learniq-features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .learniq-hero-card {
+        padding: 30px;
+    }
+
+    .learniq-hero-card h3 {
+        font-size: 1.5rem;
+    }
+
     .projects-container {
         grid-template-columns: 1fr;
     }
@@ -740,6 +1040,14 @@ footer {
 
     .skills-container {
         grid-template-columns: 1fr;
+    }
+
+    .learniq-features {
+        grid-template-columns: 1fr;
+    }
+
+    .learniq-hero-card h3 {
+        font-size: 1.3rem;
     }
 
     .about-info {
